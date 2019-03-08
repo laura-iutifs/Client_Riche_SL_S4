@@ -1,0 +1,16 @@
+aller sur D:
+npm install -g ember-cli
+npm install
+set PATH=%PATH%;C:\Users\21701944\AppData\Roaming\npm
+ember -v
+ember serve
+
+dans app
+refaire tt les manip +
+ember install ember-bootstrap
+--------------------------------------------------
+
+ember generate route user
+ember generate route client
+ember generate route client/details
+ember generate route clients --> tableau de données
