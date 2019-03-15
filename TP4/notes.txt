@@ -1,0 +1,28 @@
+telecharger :
+
+MongoDB 
+https://www.mongodb.com/download-center/community 
+
+Restheart 
+https://github.com/SoftInstigate/restheart/releases
+
+.bat 
+https://slamwiki.kobject.net/richclient/emberjs/td4
+
+a modifier le .bat :
+@echo off
+cd "D:\mongodb\bin"
+start mongod
+ping 127.0.0.1 -n 10 > nul
+start mongo
+cd "D:\restheart-3.8.1"
+start java -jar -Dfile.Encoding=UTF-8 restheart.jar
+exit
+
+executer mongod.exe pour lancer le demon
+java -jar restheart.jar
+
+et lancer le client : 
+sur le D:/ mongo-go.bat
+
+Web : http://127.0.0.1:8080/dbTest
