@@ -6,18 +6,15 @@ de l'option Web du DUT Informatique de l'Université de Caen, Ifs Campus 3.
 Ils sont animés par **Jean Christophe HERON**.
 
 
-
 Langages et framework utilisés
 ------------------------------
 * HTML
 * CSS
-* JAVA SCRIPT
+* JS
 * MONGODB
 
-* Ember JS
-[Ember](https://emberjs.com/)
-* SEMANTIC UI 2.4.2 
-[Semantic](https://semantic-ui.com/)
+* Ember JS - [Ember](https://emberjs.com/)
+* SEMANTIC UI 2.4.2 - [Semantic](https://semantic-ui.com/)
 
 Installer l'application
 -----------------------
@@ -118,7 +115,8 @@ Etudiant
 --------
 
 Ces TDs sont realises par Laura SCELLES, etudiant en deuxieme annee de DUT Informatique
-a l'universite de Caen
+a l'universite de Caen.
+
 
 
 
