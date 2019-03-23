@@ -74,8 +74,9 @@ Sur D:
 	 D:/mongo.exe
 
 	Ne pas oublier d'insatller ember-cli-uuid pour les clés uniques d'id
-	et aussi semantic ui pour le rendu client :
-	ember install semantic-ui-ember
+	et aussi semantic ui ou bootstrap pour le rendu client :
+	* ember install semantic-ui-ember
+	* ember install ember-bootstrap
 	
 Quelques commandes Ember
 ------------------------
