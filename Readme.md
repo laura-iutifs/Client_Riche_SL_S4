@@ -14,6 +14,8 @@ Langages et framework utilisés
 * JACA SCRIPT
 * MONGODB
 
+* Ember JS
+[Ember](https://emberjs.com/)
 * SEMANTIC UI 2.4.2 
 [Semantic](https://semantic-ui.com/)
 
