@@ -11,7 +11,7 @@ Langages et framework utilisés
 ------------------------------
 * HTML
 * CSS
-* JACA SCRIPT
+* JAVA SCRIPT
 * MONGODB
 
 * Ember JS
@@ -54,17 +54,28 @@ https://slamwiki.kobject.net/richclient/emberjs/td4
 
 Sur D:
 	dezipper ces trois dossiers
+	
 	modifier le .bat afin que les chemins soit les bon
+	
 	ex:
 		@echo off
+				
 		cd "D:\mongodb\bin"
+				
 		start mongod
+				
 		ping 127.0.0.1 -n 10 > nul
+				
 		start mongo
+								
 		cd "D:\restheart-3.8.1"
+				
 		start java -jar -Dfile.Encoding=UTF-8 restheart.jar
+				
 		exit
+				
 	executer mongod.exe our lancer le demon (serveur)
+	
 	puis le .jar de restheart avec la commande suivante:
 		ava -jar restheart.jar
 		
@@ -110,6 +121,11 @@ Quelques commandes MongoDB
 
 	se rendre sur _http://127.0.0.1:8080/dbTest/Users_
 
+Etudiant
+--------
+
+Ces TDs sont realises par Laura SCELLES, etudiant en deuxieme annee de DUT Informatique
+a l'universite de Caen
 
 
 
