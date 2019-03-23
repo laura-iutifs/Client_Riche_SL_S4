@@ -29,7 +29,6 @@ Pour les TD de 0 à 3
 	cd ember-nom-du-projet
 	ember serve
 	
-	
 	Visualiser votre application sur le lien suivant: _http://127.0.0.1:8080/_
 	
 	Si le port **8080** est deja occupe par WAMP par exemple executer les commandes suivantes:
