@@ -21,13 +21,14 @@ Installer l'application
 
 Pour les TD de 0 à 3
  Sur D:
-	npm install -g ember-cli
-	set PATH=%PATH%;C:\Users\21701944\AppData\Roaming\npm
+ 
+	npm install -g ember-cli	
+	set PATH=%PATH%;C:\Users\21701944\AppData\Roaming\npm	
 	ember -v
 	ember new ember-nom-du-projet
-
 	cd ember-nom-du-projet
 	ember serve
+	
 	
 	Visualiser votre application sur le lien suivant: _http://127.0.0.1:8080/_
 	
