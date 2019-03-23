@@ -58,20 +58,13 @@ Sur D:
 	modifier le .bat afin que les chemins soit les bon
 	
 	ex:
-		@echo off
-				
-		cd "D:\mongodb\bin"
-				
-		start mongod
-				
-		ping 127.0.0.1 -n 10 > nul
-				
-		start mongo
-								
-		cd "D:\restheart-3.8.1"
-				
-		start java -jar -Dfile.Encoding=UTF-8 restheart.jar
-				
+		@echo off		
+		cd "D:\mongodb\bin"			
+		start mongod				
+		ping 127.0.0.1 -n 10 > nul				
+		start mongo								
+		cd "D:\restheart-3.8.1"				
+		start java -jar -Dfile.Encoding=UTF-8 restheart.jar				
 		exit
 				
 	executer mongod.exe our lancer le demon (serveur)
