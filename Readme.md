@@ -14,7 +14,7 @@ Langages et framework utilisés
 * MONGODB
 
 * [Ember JS](https://emberjs.com/)
-* [EMANTIC UI 2.4.2](https://semantic-ui.com/)
+* [SEMANTIC UI 2.4.2](https://semantic-ui.com/)
 * [Bootstrap 4.3.1](https://getbootstrap.com/)
 
 Installer l'application
