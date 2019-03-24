@@ -10,11 +10,12 @@ Langages et framework utilisés
 ------------------------------
 * HTML
 * CSS
-* JS
+* JAVA SCRIPT
 * MONGODB
 
-* Ember JS - [Ember](https://emberjs.com/)
-* SEMANTIC UI 2.4.2 - [Semantic](https://semantic-ui.com/)
+* [Ember JS](https://emberjs.com/)
+* [EMANTIC UI 2.4.2](https://semantic-ui.com/)
+* [Bootstrap 4.3.1](https://getbootstrap.com/)
 
 Installer l'application
 -----------------------
