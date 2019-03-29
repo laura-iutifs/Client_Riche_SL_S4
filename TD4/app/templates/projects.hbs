@@ -1,1 +1,44 @@
+<div class="ui container">
+  <br/><h1>TP4 Laura Scelles</h1>
+  <div class="ui secondary pointing menu">
+
+    {{#link-to "projects" class="ui active item "}}
+      Projects
+    {{/link-to}}
+    {{#link-to "developers" class="ui item "}}
+      Developers
+    {{/link-to}}
+  </div>
+
+  {{#link-to "projects.new" class="ui primary button"}}
+    <i class="add icon"></i>Ajouter un projet
+  {{/link-to}}
+  <table class="ui table ">
+    <thead>
+      <th>Name</th>
+      <th>Descriptif</th>
+      <th>Start Date</th>
+      <th>Due Date</th>
+      <th></th>
+    </thead>
+    <tbody>
+      {{#each model as |pro|}}
+        <tr>
+          <td>{{pro.name}}</td>
+          <td>{{pro.descriptif}}</td>
+          <td>{{pro.creationDate}}</td>
+          <td>{{pro.duoDate}}</td>
+          <td>
+            {{#link-to "projects.edit" pro class="ui right floated basic circular icon button"}}
+              <i class="edit icon"></i>
+            {{/link-to}}
+            {{#link-to "projects.delete" pro class="ui right floated basic circular icon button red"}}
+              <i class="remove icon"></i>
+            {{/link-to}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
 {{outlet}}

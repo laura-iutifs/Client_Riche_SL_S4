@@ -1,19 +1,17 @@
-<br/>
-<div class="ui text container">
-  <div class="ui two buttons">
-
-    <button class="ui button teal">Developers</button>
-    {{#link-to "projects" class="ui right floated icon button "}}
+<div class="ui container"><br/>
+  <h1>TP4 Laura Scelles</h1>
+  <div class="ui secondary pointing menu">
+    
+    {{#link-to "projects" class="ui item "}}
       Projects
     {{/link-to}}
-
+    {{#link-to "developers" class="ui active item "}}
+      Developers
+    {{/link-to}}
   </div>
 
-
-
-  <h1>TP4 Laura Scelles</h1>
-  {{#link-to "developers.new" class="ui teal button"}}
-    <i class="add icon"></i>Ajouter un dev...
+  {{#link-to "developers.new" class="ui primary button"}}
+    <i class="add icon"></i>Ajouter un developper
   {{/link-to}}
   <table class="ui table ">
     <thead>
@@ -28,11 +26,9 @@
             {{#link-to "developers.edit" dev class="ui right floated basic circular icon button "}}
               <i class="edit icon"></i>
             {{/link-to}}
-
             {{#link-to "developers.delete" dev class="ui right floated basic circular icon button red"}}
               <i class="remove icon"></i>
             {{/link-to}}
-
           </td>
         </tr>
       {{/each}}

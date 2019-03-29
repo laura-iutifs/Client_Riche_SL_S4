@@ -1,8 +1,5 @@
 <div class="ui container">
   <div class="ui aligned basic segment">
-    <div class="ui horizontal divider">
-      Add or Edit
-    </div>
     <div class="ui form">
         <div class="two fields">
           <div class="field">
@@ -13,31 +10,24 @@
               <label>Owner</label>
               {{input value=model.copy.owner.identify class="ui input"}}
           </div>
-
-
         </div>
-        <div class="field">
-            <label>Descriptif</label>
-            {{input value=model.copy.descriptif class="ui input"}}
-        </div>
-
         <div class="two fields">
           <div class="field">
               <label>CreationDate</label>
               {{input value=model.copy.creationDate class="ui input"}}
           </div>
-
           <div class="field">
               <label>DueDate</label>
               {{input value=model.copy.duoDate class="ui input"}}
           </div>
-      </div>
-
-        <div class="field ui centered grid">
-          <button {{action "save" model}} class="ui teal button">Enregistrer</button>
         </div>
-
-
+        <div class="field">
+            <label>Descriptif</label>
+            {{input value = model.copy.descriptif class="ui input"}}
+        </div>
+      <div class="ui field"><br>
+        <button {{action "save" model}} class="ui primary button">Enregistrer</button>
+      </div>
     </div>
   </div>
 </div>
