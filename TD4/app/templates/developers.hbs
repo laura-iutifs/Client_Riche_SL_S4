@@ -1,1 +1,44 @@
+<br/>
+<div class="ui text container">
+  <div class="ui three buttons">
+    <button class="ui button grey">Developers</button>
+
+    {{#link-to "projects" class="ui right floated icon button "}}
+      Projects
+    {{/link-to}}
+    {{#link-to "" dev class="ui right floated icon button "}}
+      Stories
+    {{/link-to}}
+  </div>
+  <div class="ui divider"></div>
+
+
+  <h1>MongoDB TD4</h1>
+  {{#link-to "developers.new" class="ui teal button"}}
+    <i class="add icon"></i>Ajouter un dev...
+  {{/link-to}}
+  <table class="ui table ">
+    <thead>
+      <th>Identity</th>
+      <th></th>
+    </thead>
+    <tbody>
+      {{#each model as |dev|}}
+        <tr>
+          <td>{{dev.identify}}</td>
+          <td >
+            {{#link-to "developers.edit" dev class="ui right floated basic circular icon button "}}
+              <i class="edit icon"></i>
+            {{/link-to}}
+
+            {{#link-to "developers.delete" dev class="ui right floated basic circular icon button red"}}
+              <i class="remove icon"></i>
+            {{/link-to}}
+
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
 {{outlet}}
