@@ -1,18 +1,16 @@
-<div class="ui container">
-  <div class="ui aligned basic segment">
-    <div class="ui horizontal divider">
-      Add or Edit
-    </div>
+<div class="ui container"><br>
+  <div class="ui  segment">
+    <h3>Ajouter un developeur</h3>
     <div class="ui form">
-        <div class="field">
-            <label>Nom</label>
-            {{input value=model.copy.identify class="ui input"}}
+        <div class="two fields">
+          <div class="ui field">
+            <label>Identity</label>
+            {{input value = model.copy.identify class="ui input"}}
+          </div>
+          <div class="ui field"><br>
+            <button {{action "save" model}} class="ui teal button">Enregistrer</button>
+          </div>
         </div>
-
-        <div class="field ui centered grid">
-          <button {{action "save" model}} class="ui teal button">Enregistrer</button>
-        </div>
-
       </div>
 
   </div>
