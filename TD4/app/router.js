@@ -7,11 +7,23 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('developer');
   this.route('developers', function() {
     this.route('new');
+    this.route('edit', {path:'edit/:developer_id'});
+    this.route('delete', {path:'delete/:developer_id'});
   });
   this.route('projects', function() {
     this.route('new');
+    this.route('edit', {path:'edit/:project_id'});
+    this.route('delete', {path:'delete/:project_id'});
+  });
+  this.route('project', {path:'project/:project_id'});
+
+  this.route('', function() {
+    this.route('story', function() {
+      this.route('new', {path:'new/:project_id'});
+    });
   });
 });
 
