@@ -16,10 +16,10 @@ var Adapater=DS.RESTAdapter.extend({
     return this.get('host')+'/'+this.get('namespace')+`/${modelName}/*?filter={_id:'${id}'}`;
   },
   urlForQuery(query,modelName) {
-  if (this.sortQueryParams) {
-    query = this.sortQueryParams(query);
-  }
-  modelName=pluralize(modelName);
+    if (this.sortQueryParams) {
+      query = this.sortQueryParams(query);
+    }
+    modelName=pluralize(modelName);
     return this.get('host')+'/'+this.get('namespace')+'/'+modelName+'?filter='+JSON.stringify(query.filter);
   }
 });
