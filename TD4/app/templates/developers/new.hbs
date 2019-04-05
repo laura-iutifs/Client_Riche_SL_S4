@@ -5,7 +5,7 @@
         <div class="two fields">
           <div class="ui field">
             <label>Identity</label>
-            {{input value = model.copy.identify class="ui input"}}
+            {{input name="identity" value = model.copy.identity class="ui input" placeholder="Nom..."}}
           </div>
           <div class="ui field"><br>
             <button {{action "save" model}} class="ui primary button">Enregistrer</button>

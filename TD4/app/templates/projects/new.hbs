@@ -4,29 +4,31 @@
         <div class="two fields">
           <div class="field">
               <label>Nom</label>
-              {{input value=model.copy.name class="ui input"}}
+              {{input name="name" value=model.copy.name class="ui input" type="text" placeholder="Nom"}}
           </div>
           <div class="field">
               <label>Owner</label>
-              {{input value=model.copy.owner.identify class="ui input"}}
+              {{input name="owner" value=model.copy.owner.identify class="ui input" type="text"}}
           </div>
         </div>
         <div class="two fields">
           <div class="field">
               <label>CreationDate</label>
-              {{input value=model.copy.creationDate class="ui input" type="date"}}
+              {{input name="stratDate" value=model.copy.creationDate class="ui input" type="date"}}
           </div>
           <div class="field">
               <label>DueDate</label>
-              {{input value=model.copy.duoDate class="ui input" type="date"}}
+              {{input name="dueDate" value=model.copy.duoDate class="ui input" type="date"}}
           </div>
         </div>
         <div class="field">
             <label>Descriptif</label>
-            {{input value = model.copy.descriptif class="ui input"}}
+            {{input name="descriptif" value = model.copy.descriptif class="ui input" type="text"}}
         </div>
+
       <div class="ui field"><br>
-        <button {{action "save" model}} class="ui primary button">Enregistrer</button>
+        <button {{action "save" model}} class="ui green button"><i class="check circle icon"></i>
+          Valider</button>
       </div>
     </div>
   </div>

@@ -15,10 +15,11 @@
   {{/link-to}}
   <table class="ui table ">
     <thead>
-      <th>Name</th>
+      <th>Project</th>
       <th>Descriptif</th>
       <th>Start Date</th>
       <th>Due Date</th>
+      <th>Owner</th>
       <th></th>
     </thead>
     <tbody>
@@ -26,8 +27,9 @@
         <tr>
           <td>{{pro.name}}</td>
           <td>{{pro.descriptif}}</td>
-          <td>{{pro.creationDate}}</td>
-          <td>{{pro.dueDate}}</td>
+          <td>{{moment-format pro.creationDate 'MM-DD-YYYY' 'MM-DD-YYYY'}}</td>
+          <td>{{moment-format pro.dueDate 'MM-DD-YYYY' 'MM-DD-YYYY'}}</td>
+          <td> {{pro.owner.identity}}</td>
           <td>
             {{#link-to "projects.edit" pro class="ui right floated basic circular icon button"}}
               <i class="edit icon"></i>
